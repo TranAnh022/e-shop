@@ -3,7 +3,7 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import styled from 'styled-components';
 import { sliderItems } from '../data';
-
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     width: 100%;
@@ -104,7 +104,7 @@ const Slider = () => {
                     <InfoContainer>
                         <Title>{item.title}</Title>
                         <Desc>{item.desc}</Desc>
-                        <Button>SHOPPING NOW</Button>  
+                        <Link to ="productlist"><Button >SHOPPING NOW</Button></Link>
                       </InfoContainer>
                 </Slide>
             ))}
